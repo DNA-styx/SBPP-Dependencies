@@ -1,0 +1,49 @@
+name: "Release"
+
+on:
+  push:
+    tags:
+      - "*"
+
+env:
+  COMPOSER_FLAGS: "--no-dev --no-interaction"
+
+jobs:
+  build:
+    name: Upload Release Asset
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: "Install PHP"
+        uses: "shivammathur/setup-php@v2"
+        with:
+          coverage: "none"
+          extensions: "intl"
+          ini-values: "memory_limit=-1"
+          php-version: "8.2"
+
+      - name: "Install dependencies from composer.lock using composer binary provided by system"
+        run: "composer install ${{ env.COMPOSER_FLAGS }}"
+
+      - name: Archive Release
+        uses: thedoctor0/zip-release@master
+        with:
+          type: 'zip'
+          filename: '${{ github.event.repository.name }}.zip'
+          exclusions: '*.git* /*node_modules/* .editorconfig'
+
+      - name: Upload Release
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: "${{ github.event.repository.name }}.zip"
+          token: ${{ secrets.GITHUB_TOKEN }}
+          allowUpdates: true
+
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          draft: true
+          files: ${{ github.event.repository.name }}.zip
