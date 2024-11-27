@@ -1,5 +1,5 @@
 # SBPP-Dependency-Downloader
-Github action to download all dependences required to install SourceBann++<br>
+Uses a Github action to download all dependences required to install SourceBann++<br>
 <br>
 For use with web hosts that don't allow/support SSH access<br>
 <br>
