@@ -1,6 +1,6 @@
-# SBPP-Dependency-Downloader
+# SBPP-Dependency
 
-A automated download of all dependences required to install SourceBann++. For use with web hosts that don't allow/support SSH access<br>
+A automated archive of all dependences required to install SourceBann++. For use with web hosts that don't allow/support SSH access<br>
 
 ## Getting Started
 
