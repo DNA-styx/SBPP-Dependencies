@@ -1,3 +1,7 @@
+![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/DNA-styx/SBPP-Dependencies/total)
+![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/DNA-styx/SBPP-Dependencies)
+
+
 # SBPP-Dependency
 
 A automated archive of all dependences required to install SourceBann++. For use with web hosts that don't allow/support SSH access<br>
