@@ -34,6 +34,8 @@ FTP to your web host, browse to the ``includes`` folder and ensure there is a ``
 Open the vendor folder and ensure there are files in it. They should look like the below.
 ![image](https://github.com/user-attachments/assets/e3448a76-e98d-4680-8917-4b9b65363288)
 
+### `Fatal error: Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.2.0". You are running 8.1.31.`
+Your web server needs to run v8.2.0 or greater. Talk to your web host to upgrade, or use your cpanel to do so yourself.
 
 ## Additional Documentation and Acknowledgments
 
