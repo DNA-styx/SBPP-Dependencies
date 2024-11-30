@@ -8,7 +8,7 @@ A automated archive of all dependences required to install SourceBann++. For use
 
 ## Getting Started
 
-Download the latest version from the Releases page. Upload the 'includes' folder to your SourceBans++ site, overwriting any fiels already in there.
+Download the latest version from the Releases page. Upload the 'includes' folder to your SourceBans++ site, overwriting any files already in there.
 
 ### Prerequisites
 
