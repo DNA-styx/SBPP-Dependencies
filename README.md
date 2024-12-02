@@ -23,7 +23,7 @@ New Install of SourceBanns++
 2. Download the latest release of SBPP Dependencies from <a href="https://github.com/DNA-styx/SBPP-Dependency-Downloader/releases">here</a>
 3. Upload the contents of the ``web`` folder from SourceBans++ archive to your web server
 4. Upload the ``includes`` folder from SBPP Dependencies archive to your web server
-5. Go to ``your web site address``/install/ in your web browser to start the install
+5. Go to ``your web site address/install/`` in your web browser to start the install
 
 ## Troubleshooting
 
