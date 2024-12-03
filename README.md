@@ -24,6 +24,8 @@ New Install of SourceBanns++
 3. Upload the contents of the ``web`` folder from SourceBans++ archive to your web server
 4. Upload the ``includes`` folder from SBPP Dependencies archive to your web server
 5. Go to ``your web site address/install/`` in your web browser to start the install
+6. Go to ``your web site address/updater/`` in your web browser to ensure your database is up to date
+7. Delete ``your web site address/install/`` & ``your web site address/updater/`` to finish
 
 ## Troubleshooting
 
