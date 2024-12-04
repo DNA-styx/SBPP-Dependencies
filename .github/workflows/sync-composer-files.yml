@@ -1,4 +1,4 @@
-name: Flat
+name: Sync Composer Files from SBPP
 
 on:
   workflow_dispatch: # Required even though this is currently empty
