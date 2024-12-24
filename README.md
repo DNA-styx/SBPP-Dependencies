@@ -4,7 +4,8 @@
 
 # SBPP-Dependency
 
-A automated archive of all dependences required to install SourceBann++. For use with web hosts that don't allow/support SSH access<br>
+A automated archive of all dependences required to install SourceBann++. For use with web hosts that don't allow/support SSH access.<br>
+For hosts that do allow SSH/Composer installs follow this <a href="https://forums.nfoservers.com/viewtopic.php?p=79776&hilit=sourcebans#p79776">process<a/>.
 
 ## Getting Started
 
