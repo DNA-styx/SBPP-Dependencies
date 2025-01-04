@@ -3,7 +3,7 @@ name: Sync Composer Files from SBPP and notify
 on:
   workflow_dispatch: # Required even though this is currently empty
   schedule:
-    - cron: '35 1 * * *' # Run once a day at 0135
+    - cron: '25 1 * * *' # Run once a day at 0135
 
 jobs:
   scheduled:
