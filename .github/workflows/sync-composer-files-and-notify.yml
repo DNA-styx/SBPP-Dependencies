@@ -11,7 +11,7 @@ jobs:
     steps: 
       # The first step is to check out the repository so it can read the files inside of it and do other operations
       - name: Check out repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4.2.2
 
       # Fetch data - composer.json
       - name: Fetch data - composer.json
@@ -43,7 +43,7 @@ jobs:
       # Notify via GitHub issue
       - name: Notify via GitHub issue
         if: success() && steps.commit_and_push.outputs.changes == 'true'
-        uses: actions/github-script@v6
+        uses: actions/github-script@v7.0.1
         with:
           script: |
             const { createIssue } = require('@actions/github/lib/utils');
